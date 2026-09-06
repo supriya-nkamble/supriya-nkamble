@@ -1,12 +1,24 @@
 # Hi, I'm Supriya 👋
 
-**AI/ML Engineer** — I build retrieval systems, LLM applications, and ML serving,
-and I measure them honestly. Based on the Sunshine Coast, QLD. ~6 years in
-engineering (backend → ML), Master of Computing at ANU, ex-CSIRO.
+I take AI systems from an ambiguous problem to production — owning the
+**architecture**, the **evaluation strategy**, and the **path to ship**. Retrieval
+systems are my depth; making them trustworthy is the point.
 
-🔗 [Portfolio](https://github.com/supriya-nkamble/portfolio) ·
+A decade building software — Java systems at BNY Mellon, a Master of Computing at
+ANU, ML at CSIRO, and the last ~5 years on AI at Typefi.
+
+🔗 [Portfolio](https://portfolio-supriya-nkamble.vercel.app) ·
 [LinkedIn](https://www.linkedin.com/in/-supriya-kamble/) ·
 supriyakamble76@gmail.com
+
+---
+
+### How I work
+
+- **Evaluate before you optimize** — held-out test set, run once, never used for tuning.
+- **Provenance is enforced, not documented** — the index manifest guards the model; retrieval refuses to run on a mismatch.
+- **Degrade, don't guess** — retrieval-only fallback when there's no LLM key.
+- **Every fix ships with the test that would have caught it** — a ~60-finding audit, each mapped to its regression test.
 
 ---
 
@@ -14,9 +26,9 @@ supriyakamble76@gmail.com
 
 | Project | What it is | Signal |
 | --- | --- | --- |
-| **[Legal-QA](https://github.com/supriya-nkamble/Legal-QA)** | Hybrid RAG over Australian law — BM25 + BGE + RRF + cross-encoder rerank, FastAPI + React, Terraform → Cloud Run | **Hit@1 0.60 → 0.82** with reranking · 33 tests · CI |
-| **[Personal-Tutor](https://github.com/supriya-nkamble/Personal-Tutor)** | Multimodal RAG tutor — PDF / video / OCR ingestion, cited answers, quiz generation | PRD + architecture docs · retrieval-metrics eval · CI |
-| **[Credit-Card Fraud Detection](https://github.com/supriya-nkamble/credit-card-fraud-detection)** | Imbalanced classification on 284k transactions | 6 models · SMOTE · ROC-AUC / F1 / κ |
+| **[Legal-QA](https://github.com/supriya-nkamble/Legal-QA)** | Hybrid RAG over Australian law — BM25 + BGE + RRF + cross-encoder rerank, FastAPI + React, Terraform → Cloud Run via Workload Identity Federation | **Hit@1 0.60 → 0.82** with reranking · 33 tests · `HARDENING.md` maps every finding to a test |
+| **[Personal-Tutor](https://github.com/supriya-nkamble/Personal-Tutor)** | Multimodal RAG tutor — PDF / video / OCR ingestion behind one interface, cited answers, quiz generation | PRD with Non-Goals + a "this stack is wrong" section · architecture decision table |
+| **[Credit-Card Fraud Detection](https://github.com/supriya-nkamble/credit-card-fraud-detection)** | Imbalanced classification on 284k transactions | 6 models · SMOTE on the train fold only · ROC-AUC / F1 / κ |
 
 Also: [Emotion Detective](https://github.com/supriya-nkamble/sentiment-analysis)
 (DistilBERT fine-tune, 6 emotions) ·
@@ -29,12 +41,18 @@ Also: [Emotion Detective](https://github.com/supriya-nkamble/sentiment-analysis)
 
 ### Stack
 
+**Architecture & leadership**
+![AI system architecture](https://img.shields.io/badge/AI%20system%20architecture-4f46e5?style=flat-square)
+![Evaluation strategy](https://img.shields.io/badge/evaluation%20strategy-4f46e5?style=flat-square)
+![Responsible AI](https://img.shields.io/badge/Responsible%20AI%20%2F%20guardrails-4f46e5?style=flat-square)
+![Design docs & ADRs](https://img.shields.io/badge/design%20docs%20%26%20ADRs-4f46e5?style=flat-square)
+
 **GenAI / RAG**
 ![LangChain](https://img.shields.io/badge/LangChain-1c3c3c?style=flat-square)
 ![LangGraph](https://img.shields.io/badge/LangGraph-1c3c3c?style=flat-square)
 ![LlamaIndex](https://img.shields.io/badge/LlamaIndex-000?style=flat-square)
-![RAG](https://img.shields.io/badge/hybrid%20retrieval%20%2B%20rerank-4f46e5?style=flat-square)
-![Ragas](https://img.shields.io/badge/Ragas%20%2F%20Ranx-4f46e5?style=flat-square)
+![hybrid retrieval + rerank](https://img.shields.io/badge/hybrid%20retrieval%20%2B%20rerank-4f46e5?style=flat-square)
+![Ragas / Ranx](https://img.shields.io/badge/Ragas%20%2F%20Ranx-4f46e5?style=flat-square)
 
 **ML / DL**
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
@@ -52,6 +70,7 @@ Also: [Emotion Detective](https://github.com/supriya-nkamble/sentiment-analysis)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-336791?style=flat-square&logo=postgresql&logoColor=white)
+![Java](https://img.shields.io/badge/Java-007396?style=flat-square&logo=openjdk&logoColor=white)
 
 ---
 
