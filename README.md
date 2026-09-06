@@ -5,7 +5,7 @@ I take AI systems from an ambiguous problem to production — owning the
 systems are my depth; making them trustworthy is the point.
 
 A decade building software — Java systems at BNY Mellon, a Master of Computing at
-ANU, ML at CSIRO, and the last ~5 years on AI at Typefi.
+ANU, ML at CSIRO, and the last several years on AI at Typefi, now Codex Consulting.
 
 🔗 [Portfolio](https://portfolio-supriya-nkamble.vercel.app) ·
 [LinkedIn](https://www.linkedin.com/in/-supriya-kamble/) ·
