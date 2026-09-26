@@ -1,4 +1,4 @@
-# Hi, I'm Supriya 👋
+# Hi, I'm Supriya
 
 I take AI systems from an ambiguous problem to production — owning the
 **architecture**, the **evaluation strategy**, and the **path to ship**. Retrieval
